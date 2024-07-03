@@ -1,6 +1,23 @@
+import { useState } from "react";
 import CampoInput from "./campoInput";
+import { User } from "./classes/user";
 
 const FormularioLogin = () => {
+
+    const listaUser: User[] = [];
+
+    listaUser.push(new User('Andre', 'andre@email.com', 'andre123'));
+    listaUser.push(new User('Felipe', 'felipe@email.com', 'felipe123'));
+    listaUser.push(new User('Rilben', 'rilben@email.com', 'rilben123'));
+    
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    
+    const handleSubmit = () => {
+        
+    }
+
     return (
         <form className="flex flex-col items-center gap-12">
             <CampoInput placeholder="Email" />
