@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CampoInput from "./campoInput";
-import { User } from "./classes/user";
+import { User } from "../classes/user";
 
 const FormularioLogin = () => {
 
@@ -13,6 +13,8 @@ const FormularioLogin = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     
+
+    //continuar isso daqui!
     const handleSubmit = () => {
         alert("eeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
     }

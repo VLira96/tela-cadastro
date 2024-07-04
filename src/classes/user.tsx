@@ -28,5 +28,4 @@ export class User {
     getSenha() {
         return this.senha;
     }
-
 }
